@@ -3,6 +3,8 @@ package com.bootcamp.cicddemo;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 @SpringBootTest
 class CiCdDemoApplicationTests {
 
@@ -10,4 +12,8 @@ class CiCdDemoApplicationTests {
 	void contextLoads() {
 	}
 
+	@Test
+	void shouldBeTrue() {
+		assertTrue(Boolean.TRUE);
+	}
 }
