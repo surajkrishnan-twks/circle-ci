@@ -1,6 +1,7 @@
 #image to build from
 FROM openjdk:8-jdk-alpine
 
+
 #Create useer as its advisable not run the commands as root user
 RUN addgroup -S spring && adduser -S springuser -G spring
 USER springuser
