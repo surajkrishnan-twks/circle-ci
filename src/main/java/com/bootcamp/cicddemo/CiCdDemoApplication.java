@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class CiCdDemoApplication {
 
+	String password = "password";
+	
 	public static void main(String[] args) {
 		SpringApplication.run(CiCdDemoApplication.class, args);
 	}
