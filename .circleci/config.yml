@@ -25,7 +25,7 @@ jobs:
       - attach_workspace:
           at: ./
       - run: docker build --iidfile image.txt -t registry.heroku.com/$HEROKU_APP_NAME/web:${CIRCLE_SHA1} .
-      - run: docker login --username=_ --password=passworddddssdsdsds registry.heroku.com
+      - run: docker login --username=_ --password=$HEROKU_PASSWORD registry.heroku.com
       - run: docker push registry.heroku.com/$HEROKU_APP_NAME/web:${CIRCLE_SHA1}
       - persist_to_workspace:
           root: ./
